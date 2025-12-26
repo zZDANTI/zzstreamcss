@@ -1,0 +1,66 @@
+@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/ElegantFin-jellyfin-theme-build-latest-minified.css");
+@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/assets/add-ons/media-bar-plugin-support-latest-min.css");
+
+:root{
+  --overlayPlayButtonPosition: 50%;
+  --extraCardButtonsVisibility: block;
+  --loginPageBgUrl: url("https://zzstream.us/Branding/Splashscreen?format=webp&foregroundLayer=1&quality=33&width=3840&height=2160&blur=2");
+}
+
+.layout-tv #slides-container {
+    display: none !important;
+}
+
+.verticalSection.MyMedia .sectionTitleContainer-cards {
+    display: none !important;
+}
+
+/* SOLO pantallas grandes (desktop / TV) */
+@media (min-width: 1024px) {
+
+    .section0 .itemsContainer {
+        display: flex !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        max-width: none !important;
+        transform: none !important;
+    }
+
+    /* Las cards se expanden */
+    .section0 .card {
+        flex: 1 1 0 !important;
+        max-width: none !important;
+        margin: 0 0.6vw;
+    }
+}
+
+
+/* GIF MARVEL */
+.card[data-id='a8071433169fe53bd46301c4df1a499a']:hover .cardImageContainer,
+.card.show-animation[data-id='a8071433169fe53bd46301c4df1a499a']:focus .cardImageContainer {
+    background-image: url("https://zzstream.us/Items/a8071433169fe53bd46301c4df1a499a/Images/Logo?maxWidth=640&tag=91afb5051c920901cc9a9bf43b8fdeba&quality=90") !important;
+}
+
+/* GIF DC*/
+.card[data-id='01977228cec0ca73f7391d9f35b9ad9a']:hover .cardImageContainer,
+.card.show-animation[data-id='01977228cec0ca73f7391d9f35b9ad9a']:focus .cardImageContainer {
+    background-image: url("https://zzstream.us/Items/01977228cec0ca73f7391d9f35b9ad9a/Images/Logo?maxWidth=640&tag=f25f43274e9735c6b11daa634c76ddb0&quality=90") !important;
+}
+
+/* GIF TELE*/
+.card[data-id='357b2b218b5adb74c3e8d4e29f38683f']:hover .cardImageContainer,
+.card.show-animation[data-id='357b2b218b5adb74c3e8d4e29f38683f']:focus .cardImageContainer {
+    background-image: url("https://zzstream.us/Items/357b2b218b5adb74c3e8d4e29f38683f/Images/Logo?maxWidth=640&tag=4a94ad310cca0855fb4fefa95ab70e0c&quality=90") !important;
+}
+
+/* GIF PELICULAS*/
+.card[data-id='8d664114c3b4d6a2e2f695af8013147b']:hover .cardImageContainer,
+.card.show-animation[data-id='8d664114c3b4d6a2e2f695af8013147b']:focus .cardImageContainer {
+    background-image: url("https://zzstream.us/Items/8d664114c3b4d6a2e2f695af8013147b/Images/Logo?maxWidth=640&tag=91afb5051c920901cc9a9bf43b8fdeba&quality=90") !important;
+}
+
+/* GIF SERIES*/
+.card[data-id='d9024b2400b90bd64db42ffd8cec2749']:hover .cardImageContainer,
+.card.show-animation[data-id='d9024b2400b90bd64db42ffd8cec2749']:focus .cardImageContainer {
+    background-image: url("https://zzstream.us/Items/d9024b2400b90bd64db42ffd8cec2749/Images/Logo?maxWidth=640&tag=91afb5051c920901cc9a9bf43b8fdeba&quality=90") !important;
+}
